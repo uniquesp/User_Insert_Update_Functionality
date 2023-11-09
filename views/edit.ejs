@@ -1,0 +1,12 @@
+
+<h1>Edit</h1>
+
+<form action="/users/edit" method="POST">
+    <input type="hidden" name="user_id" value="<%= user._id %>" required>
+    <input type="text" name="name" value="<%= user.name %>" required>
+    <input type="email" name="email" value="<%= user.email %>" required readonly>
+    <input type="text" name="mobile" value="<%= user.mobileno %>" required>
+    <input type="text" name="gender" value="<%= user.gender %>" required readonly>
+
+    <input type="submit" value="Update Profile">
+</form>
